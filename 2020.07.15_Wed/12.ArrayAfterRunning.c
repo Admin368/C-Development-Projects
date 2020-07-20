@@ -18,7 +18,7 @@ int main(){
     printf("Number of Spaces : %d\n",count);
     for(i=0;i<7;i++){
         printf("Array %c",numbers[i]);
-    }
+    } // /* */
     
     return 0;
 }
