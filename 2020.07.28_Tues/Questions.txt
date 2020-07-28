@@ -1,0 +1,13 @@
+
+#module 3
+1. Write a program to create and store information in a text file.
+2. write a program to read existing file. display the file content
+to the console.
+3.Write a program to compare two files, printing the first line
+where they differ.
+4. Carry out the following file operates,
+-read file content, modify file content, append file content to
+simulate an error trace log file.
+#Practice problems
+Write a program to print a set of files, starting each new one on a
+new page, with a title and a running page count for each file. 

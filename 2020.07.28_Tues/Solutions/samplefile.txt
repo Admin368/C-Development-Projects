@@ -1,0 +1,7 @@
+Line1 include <reg52.h>
+Line2 include <paulobetaX5.h>
+Line3 int main(){
+Line4 	xled(1);
+Line5 	xdelay(10);
+Line6 	xled(0);
+Line7 }

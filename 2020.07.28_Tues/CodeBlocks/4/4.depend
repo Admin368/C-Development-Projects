@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1595928365 source:e:\_github\c68\2020.07.28_tues\solutions\1_create&write2file.c
+	<stdio.h>
+
+1595929456 source:e:\_github\c68\2020.07.28_tues\solutions\2_readexisting.c
+	<stdio.h>
+
+1595929990 source:e:\_github\c68\2020.07.28_tues\solutions\3_read&differ2file.c
+	<stdio.h>
+
