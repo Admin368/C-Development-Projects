@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\proj-moisture_V1.obj" 
+TO ".\Objects\PROJ-MOISTURE" 
+PRINT(".\Listings\PROJ-MOISTURE.m51") RAMSIZE(256) 

@@ -1,0 +1,10 @@
+Build target 'Target 1'
+compiling proj-moisture_V1.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_MYDAC?PROJ_MOISTURE_V1
+
+Program Size: data=17.0 xdata=0 code=550
+creating hex file from ".\Objects\PROJ-MOISTURE"...
+".\Objects\PROJ-MOISTURE" - 0 Error(s), 1 Warning(s).
+Build Time Elapsed:  00:00:01
