@@ -1,0 +1,14 @@
+#include <STC15F2K60S2.H>
+#include <intrins.h>
+#define uchar unsigned char
+#define uint unsigned int
+sbit pos = P0^0;
+sbit neg = P2^0;
+int main(){
+	P0 = 0;
+	P1 = 0;
+	neg = 0;
+	while(1){
+		pos = 1;
+	}
+}

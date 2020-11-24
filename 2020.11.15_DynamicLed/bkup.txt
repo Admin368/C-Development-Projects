@@ -1,0 +1,91 @@
+#include <STC15F2K60S2.H>
+#include <intrins.h>
+#define uchar unsigned char
+#define uint unsigned int
+sbit leds = P4^5;
+sbit pos = P0^0;
+sbit neg = P2^0;
+void offled(int i);
+void seconds(int sec);
+void Delay1000ms();
+void Delay100ms();
+void Delay10ms();
+void delayX(int sec);
+void disable();
+int main(){
+	disable();
+	pos =1;
+	leds = 0;
+	while(1){
+			/*neg =0;
+			seconds(5);
+			offled(50);
+			seconds(5);
+			*/
+			fade();
+	}
+}
+void offled(int i){
+		int x;
+		for(x=0;x<i;x+=10){
+				neg = 0;
+				delay(x);
+				neg = 1;
+				delay(x);
+		}
+		neg = 1;
+}
+void disable(){
+	P0=0;
+	P1=0;
+}
+void delayX(int sec){
+	int x;
+	for(x=0;x<sec+1;x++){
+		Delay10ms();
+	}
+}
+void seconds(int sec){
+	int x;
+	for(x=0;x<sec+1;x++){
+		Delay100ms();
+	}
+}
+void Delay10ms(){
+	int i,j;
+	for(i=0;i<120;i+=1){
+	}
+}
+void Delay100ms()		//@11.0592MHz
+{
+	unsigned char i, j, k;
+
+	_nop_();
+	_nop_();
+	i = 5;
+	j = 52;
+	k = 195;
+	do
+	{
+		do
+		{
+			while (--k);
+		} while (--j);
+	} while (--i);
+}
+
+void Delay1000ms(){
+	unsigned char i, j, k;
+	_nop_();
+	_nop_();
+	i = 43;
+	j = 6;
+	k = 203;
+	do
+	{
+		do
+		{
+			while (--k);
+		} while (--j);
+	} while (--i);
+}
