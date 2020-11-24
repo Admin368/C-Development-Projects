@@ -1,0 +1,31 @@
+#include"reg52.h"
+#define uchar unsigned char
+#define uint unsigned int
+
+sbit LED=P2^0;
+uchar i,pwm,y=500;
+void delay(uint i) //????
+{
+int x;
+for(x=i;x>0;x–);
+}
+void main()
+{
+while(1)
+{
+for(pwm=y;pwm>0;pwm–) //????
+{
+LED=0; //??
+delay(pwm);
+LED=1;//??
+delay(y-pwm);
+}
+for(pwm=0;pwm<y;pwm++)
+{
+LED=0;
+delay(pwm);
+LED=1;
+delay(y-pwm);
+}
+}
+}
